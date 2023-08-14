@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bed and Breakfast</title>
+  </head>
+  <body>
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <title>Edit Booking</title>
+      </head>
+      <body>
+        <h1>Edit Booking</h1>
+        <a href="booking_listing.html">Return to Booking Listing</a> |
+        <a href="main_page.html">Return to Main Page</a> <br /><br />
+        <form method="post" action="update_booking.php">
+          <label for="room">Room:</label>
+          <select name="room" required>
+            <option value="">Select a Room</option>
+            <option value="1">Kelly, S, 5</option>
+            <option value="2">Herman, D, 5</option>
+            <option value="3">Scarlett, D, 2</option>
+            <option value="4">Jelani, S, 2</option>
+            <option value="5">Sonya, S, 5</option>
+            <option value="6">Miranda, S, 4</option>
+            <option value="7">Helen, S, 2</option>
+            <option value="8">Octavia, D, 3</option>
+            <option value="9">Gretchen, D, 3</option>
+            <option value="10">Bernard, S, 5</option>
+            <option value="11">Dacey, D, 2</option>
+            <option value="12">Preston, D, 2</option>
+            <option value="13">Dane, S, 4</option>
+            <option value="14">Cole, S, 1</option>
+          </select>
+          <br />
+
+          <label for="checkInDate">Check-in Date:</label>
+          <input type="date" name="checkInDate" required />
+          <br />
+
+          <label for="checkOutDate">Check-out Date:</label>
+          <input type="date" name="checkOutDate" required />
+          <br />
+
+          <label for="contactNumber">Contact Number:</label>
+          <input type="tel" name="contactNumber" pattern="[0-9]{10}" required />
+          <br />
+
+          <label for="bookingExtras">Booking Extras:</label>
+          <textarea name="bookingExtras" rows="4" cols="50"></textarea>
+          <br />
+
+          <label for="roomReview">Room Review:</label>
+          <textarea name="roomReview" rows="4" cols="50"></textarea>
+          <br />
+
+          <input type="submit" value="Update" />
+        </form>
+        <a href="">Cancel</a>
+      </body>
+    </html>
+  </body>
+</html>
