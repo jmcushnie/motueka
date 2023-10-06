@@ -121,7 +121,7 @@ if ($rowcount > 0) {
 
     <input type="submit" name="submit" value="Update">
 </form>
-<form method="post" action="deletebooking.php?id=<bookingID>">
+<form method="post" action="deletebooking.php?id=<?php echo $id; ?>">
     <input type="hidden" name="id" value="<?php echo $id; ?>">
     <input type="submit" name="submit" value="Delete Booking">
 </form>
